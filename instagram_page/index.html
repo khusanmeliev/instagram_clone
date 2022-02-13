@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <script src="app.js"></script> -->
+  </head>
+  <body>
+    <!-- ------------------------NAV BAR -------------------------- -->
+    <nav id="navbar">
+      <div class="logo">
+        <div class="logo1">
+          <i class="fa fa-instagram"></i>
+        </div>
+      </div>
+      <div class="title">
+        <p>Instagram</p>
+      </div>
+      <div class="message">
+        <div class="logo">
+          <a href="/chat/chat.html"> <i class="fa fa-comment"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- --------------------POSTS PAGE------------------ -->
+    <div class="posts_page">
+      <div class="posts">
+        <div class="box">
+          <div class="top">
+            <div class="left">
+              <img
+                src="https://wikiofceleb.com/wp-content/uploads/2021/07/f393839a7d2f476bb5d7db696ff25ec1-f393839a7d2f476bb5d7db696ff25ec1-0_1620192764180_1620192803252.jpeg"
+              />
+              <p>billieeilish</p>
+            </div>
+            <div class="right">
+              <i class="fa fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <!--  -----------------MIDDLE ------------ -->
+          <div class="middle">
+            <img
+              src="https://i1.sndcdn.com/artworks-000390084831-h31kl7-t500x500.jpg"
+            />
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <div class="icons">
+                <div class="left">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                </div>
+                <div class="right">
+                  <i class="fa fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="likes">
+                <p>10 177 771 likes</p>
+              </div>
+              <div class="title">
+                <h1>billieeilish</h1>
+                <p>still here</p>
+              </div>
+              <div class="comments">
+                <p>View all 20,571 comments</p>
+              </div>
+              <div class="date">
+                <p>2 hours ago</p>
+              </div>
+              <div class="add">
+                <div class="title">
+                  <p>add a comment...</p>
+                </div>
+
+                <div class="post">
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top">
+            <div class="left">
+              <img
+                src="https://naniwallpaper.com/files/wallpapers/anime-boy/8-anime%20boy-1080x1920.jpg"
+              />
+              <p>khusanmeliev</p>
+            </div>
+            <div class="right">
+              <i class="fa fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <!--  -----------------MIDDLE ------------ -->
+          <div class="middle">
+            <img
+              src="data:image/jpeg;base64,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"
+            />
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <div class="icons">
+                <div class="left">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                </div>
+                <div class="right">
+                  <i class="fa fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="likes">
+                <p>9 999 999 likes</p>
+              </div>
+              <div class="title">
+                <h1>khusanmeliev</h1>
+                <p>i gonna to america:)</p>
+              </div>
+              <div class="comments">
+                <p>View all 200,063 comments</p>
+              </div>
+              <div class="date">
+                <p>17 hour ago</p>
+              </div>
+              <div class="add">
+                <div class="title">
+                  <p>add a comment...</p>
+                </div>
+
+                <div class="post">
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top">
+            <div class="left">
+              <img
+                src="https://api.time.com/wp-content/uploads/2020/09/time-100-Selena-Gomez.jpg"
+              />
+              <p>selenagomez</p>
+            </div>
+            <div class="right">
+              <i class="fa fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <!--  -----------------MIDDLE ------------ -->
+          <div class="middle">
+            <img
+              src="https://www.thelist.com/img/gallery/what-you-never-knew-about-selena-gomez/l-intro-1640706184.jpg"
+            />
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <div class="icons">
+                <div class="left">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                </div>
+                <div class="right">
+                  <i class="fa fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="likes">
+                <p>53 864 832 likes</p>
+              </div>
+              <div class="title">
+                <h1>selenagomez</h1>
+                <p>new photo</p>
+              </div>
+              <div class="comments">
+                <p>View all 120,733 comments</p>
+              </div>
+              <div class="date">
+                <p>3 days ago</p>
+              </div>
+              <div class="add">
+                <div class="title">
+                  <p>add a comment...</p>
+                </div>
+
+                <div class="post">
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top">
+            <div class="left">
+              <img
+                src="https://www.random.news/__export/1642098758411/sites/debate/img/2022/01/13/disexo_sin_txtulo_x7x_1.jpg_976912859.jpg"
+              />
+              <p>shawnmendes</p>
+            </div>
+            <div class="right">
+              <i class="fa fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <!--  -----------------MIDDLE ------------ -->
+          <div class="middle">
+            <img
+              src="https://p.favim.com/orig/2019/01/01/mendes-arg-beautiful-Favim.com-6755923.jpg"
+            />
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <div class="icons">
+                <div class="left">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                </div>
+                <div class="right">
+                  <i class="fa fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="likes">
+                <p>20 934 465 likes</p>
+              </div>
+              <div class="title">
+                <h1>shawnmendes</h1>
+                <p>hello guys,</p>
+              </div>
+              <div class="comments">
+                <p>View all 70,241 comments</p>
+              </div>
+              <div class="date">
+                <p>5 days ago</p>
+              </div>
+              <div class="add">
+                <div class="title">
+                  <p>add a comment...</p>
+                </div>
+
+                <div class="post">
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top">
+            <div class="left">
+              <img
+                src="https://www.hola.com/us/images/0266-11a85437ecdd-b4e8cb56287f-1000/horizontal-480/georgina-y-su-familia-en-jet.jpg"
+              />
+              <p>cristiano</p>
+            </div>
+            <div class="right">
+              <i class="fa fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <!--  -----------------MIDDLE ------------ -->
+          <div class="middle">
+            <img
+              src="https://media.gq.com/photos/55cb5cd6723483396f2c892b/16:9/w_3024,h_1701,c_limit/ronaldo-son-lede.jpg"
+            />
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <div class="icons">
+                <div class="left">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                </div>
+                <div class="right">
+                  <i class="fa fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="likes">
+                <p>25 731 394 likes</p>
+              </div>
+              <div class="title">
+                <h1>cristiano</h1>
+                <p>with my son</p>
+              </div>
+              <div class="comments">
+                <p>View all 120,474 comments</p>
+              </div>
+              <div class="date">
+                <p>7 days ago</p>
+              </div>
+              <div class="add">
+                <div class="title">
+                  <p>add a comment...</p>
+                </div>
+
+                <div class="post">
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top">
+            <div class="left">
+              <img
+                src="https://www.themoviedb.org/t/p/original/52SNpDJJCgBVfZtibLuXN1ZrliC.jpg"
+              />
+              <p>elonmusk</p>
+            </div>
+            <div class="right">
+              <i class="fa fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <!--  -----------------MIDDLE ------------ -->
+          <div class="middle">
+            <img
+              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F6be11df8-8bb6-11ea-a376-3b3698706ab4.jpg?crop=1500%2C1000%2C0%2C0"
+            />
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <div class="icons">
+                <div class="left">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                </div>
+                <div class="right">
+                  <i class="fa fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="likes">
+                <p>1 733 954 likes</p>
+              </div>
+              <div class="title">
+                <h1>elonmusk</h1>
+                <p>me with spaceX</p>
+              </div>
+              <div class="comments">
+                <p>View all 5,555 comments</p>
+              </div>
+              <div class="date">
+                <p>17 days ago</p>
+              </div>
+              <div class="add">
+                <div class="title">
+                  <p>add a comment...</p>
+                </div>
+
+                <div class="post">
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top">
+            <div class="left">
+              <img
+                src="https://i.pinimg.com/originals/42/67/23/426723eb075b01ab95495f560597ac21.jpg"
+              />
+              <p>charlieputh</p>
+            </div>
+            <div class="right">
+              <i class="fa fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <!--  -----------------MIDDLE ------------ -->
+          <div class="middle">
+            <img
+              src="https://medias.spotern.com/spots/w640/158/158929-1534544232.jpg"
+            />
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <div class="icons">
+                <div class="left">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                </div>
+                <div class="right">
+                  <i class="fa fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="likes">
+                <p>5 652 933 likes</p>
+              </div>
+              <div class="title">
+                <h1>charlieputh</h1>
+                <p>just me..</p>
+              </div>
+              <div class="comments">
+                <p>View all 10,371 comments</p>
+              </div>
+              <div class="date">
+                <p>16 days ago</p>
+              </div>
+              <div class="add">
+                <div class="title">
+                  <p>add a comment...</p>
+                </div>
+
+                <div class="post">
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="top">
+            <div class="left">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQGoiYqiTq7OUg/profile-displayphoto-shrink_200_200/0/1632233414050?e=1648080000&v=beta&t=i9rbo79i6sg2NJsUCGjKW-YtbPmQfFWrhSDcAyv4_Kw"
+              />
+              <p>javokhirm_</p>
+            </div>
+            <div class="right">
+              <i class="fa fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <!--  -----------------MIDDLE ------------ -->
+          <div class="middle">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C4E03AQGoiYqiTq7OUg/profile-displayphoto-shrink_200_200/0/1632233414050?e=1648080000&v=beta&t=i9rbo79i6sg2NJsUCGjKW-YtbPmQfFWrhSDcAyv4_Kw"
+            />
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <div class="icons">
+                <div class="left">
+                  <div class="icon">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-paper-plane"></i>
+                  </div>
+                </div>
+                <div class="right">
+                  <i class="fa fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="likes">
+                <p>20 747 103 likes</p>
+              </div>
+              <div class="title">
+                <h1>javokhirm_</h1>
+                <p>see this guys</p>
+              </div>
+              <div class="comments">
+                <p>View all 20,571 comments</p>
+              </div>
+              <div class="date">
+                <p>30 days ago</p>
+              </div>
+              <div class="add">
+                <div class="title">
+                  <p>add a comment...</p>
+                </div>
+
+                <div class="post">
+                  <p>Post</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_page">
+      <footer>
+        <a href="/index.html"><i class="fa fa-home"></i></a>
+        <a href="/search page/search.html"><i class="fa fa-search"></i></a>
+        <i class="fa fa-plus-square"></i>
+        <a href="/follow page/follow.html"><i class="fa fa-heart"></i></a>
+      </footer>
+      <div class="right">
+        <button id="submit">
+          <a href="/profile/profile.html">
+            <img
+              src="https://naniwallpaper.com/files/wallpapers/anime-boy/8-anime%20boy-1080x1920.jpg"
+          /></a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

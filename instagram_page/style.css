@@ -1,0 +1,436 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --navbar-height: 55px;
+}
+
+nav {
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(184, 184, 184);
+  position: fixed;
+  background-color: white;
+}
+nav {
+  height: var(--navbar-height);
+  width: 100%;
+  /* background-image: linear-gradient(purple, yellow); */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+nav ul {
+  margin-right: 40px;
+  background-color: green;
+}
+
+nav ul li {
+  color: red;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+}
+nav .logo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
+  float: left;
+  display: block;
+}
+nav .logo .logo1 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav .title {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Freight Sans;
+}
+
+nav .message {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+nav .message .logo {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+}
+nav .message .logo .fa-comment{
+  color: white;
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+}
+/* ---------------------POSTS---------------------------- */
+.posts_page {
+  width: 100%;
+  height: 1100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.posts_page .posts {
+  width: 60%;
+  height: 1090vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.posts_page .posts .box {
+  width: 70%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0px;
+  border: 1px solid rgb(184, 181, 181);
+}
+.posts_page .posts .box .top {
+  width: 100%;
+  height: 7%;
+  display: flex;
+}
+.posts_page .posts .box .top .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.posts_page .posts .box .top .left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 13px;
+}
+.posts_page .posts .box .top .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.posts_page .posts .box .top .right .fa-ellipsis-h {
+  font-size: 30px;
+  margin: 20px;
+}
+.posts_page .posts .box .middle {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+.posts_page .posts .box .middle img {
+  width: 100%;
+  height: 100%;
+}
+.posts_page .posts .box .bottom {
+  width: 100%;
+  height: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.posts_page .posts .box .bottom .box {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.posts_page .posts .box .bottom .box .icons {
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+.posts_page .posts .box .bottom .box .icons .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.posts_page .posts .box .bottom .box .icons .left .icon {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  cursor: pointer;
+}
+.posts_page .posts .box .bottom .box .icons .left .icon .fa-heart {
+  color: red;
+}
+
+.posts_page .posts .box .bottom .box .icons .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.posts_page .posts .box .bottom .box .icons .right .fa-bookmark {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.posts_page .posts .box .bottom .box .likes {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.posts_page .posts .box .bottom .box .title h1 {
+  font-size: 20px;
+}
+.posts_page .posts .box .bottom .box .title {
+  width: 100%;
+  height: 16%;
+  display: flex;
+  align-items: center;
+}
+.posts_page .posts .box .bottom .box .title p {
+  font-size: 20px;
+  margin: 20px;
+}
+.posts_page .posts .box .bottom .box .comments {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.posts_page .posts .box .bottom .box .date {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+.posts_page .posts .box .bottom .box .add {
+  width: 105.5%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(184, 181, 181);
+  justify-content: flex-end;
+}
+.posts_page .posts .box .bottom .box .add .title {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.posts_page .posts .box .bottom .box .add .title p {
+  font-size: 15px;
+}
+.posts_page .posts .box .bottom .box .add .post {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+/* -----------------B-------------BOTTOM-PAGE------------------------ */
+.bottom_page {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.bottom_page footer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  background-color: white;
+  border-top: 1px solid rgb(199, 199, 199);
+}
+.bottom_page footer a {
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+  color: white;
+}
+.bottom_page footer .fa-home,
+.fa-search,
+.fa-plus-square,
+.fa-heart {
+  cursor: pointer;
+}
+.bottom_page .right {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(199, 199, 199);
+  background-color: white;
+}
+.bottom_page .right button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.bottom_page .right button img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* ------------------------------------MOBILE MEDIA------------------------ */
+
+@media only screen and (max-width: 1100px) {
+  nav {
+    width: 100%;
+    height: 40px;
+  }
+  nav .logo {
+    width: 30%;
+    height: 100%;
+  }
+  nav .title {
+    font-size: 25px;
+  }
+  .posts_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .posts_page .posts {
+    width: 100%;
+    height: 1150vh;
+  }
+  .posts_page .posts .box {
+    width: 70%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0px;
+    border: 1px solid rgb(184, 181, 181);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .posts_page {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .posts_page .posts {
+    width: 80%;
+    height: 1100vh;
+  }
+  .posts_page .posts .box {
+    width: 80%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0px;
+    border: 1px solid rgb(184, 181, 181);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .posts_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .posts_page .posts {
+    width: 70%;
+    height: 1090vh;
+  }
+  .posts_page .posts .box {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0px;
+    border: 1px solid rgb(184, 181, 181);
+  }
+}
+@media only screen and (max-width: 720px) {
+  .posts_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .posts_page .posts {
+    width: 80%;
+    height: 1090vh;
+  }
+  .posts_page .posts .box {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0px;
+    border: 1px solid rgb(184, 181, 181);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .posts_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .posts_page .posts {
+    width: 90%;
+    height: 1090vh;
+  }
+  .posts_page .posts .box {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0px;
+    border: 1px solid rgb(184, 181, 181);
+  }
+}

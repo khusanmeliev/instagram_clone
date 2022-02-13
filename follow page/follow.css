@@ -1,0 +1,226 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --navbar-height: 40px;
+}
+nav {
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.like_page {
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.like_page .like {
+  width: 97%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.like_page .like .title {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+.like_page .like .box {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.like_page .like .box .follow {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.like_page .like .box .follow .title {
+  width: 100%;
+  height: 100%;
+}
+.like_page .like .box .follow .left {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.like_page .like .box .follow .left .started {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.like_page .like .box .follow .left .started img {
+  width: 30%;
+  height: 80%;
+  border-radius: 50%;
+}
+.like_page .like .box .follow .left .started h1 {
+  font-size: 15px;
+  margin: 20px;
+}
+
+.like_page .like .box .follow .left .box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.like_page .like .box .follow .left .box p {
+  font-size: 15px;
+}
+
+.like_page .like .box .follow .right {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.like_page .like .box .follow .right .box {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.like_page .like .box .follow .right .box button {
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+/* -----------------B-------------BOTTOM-PAGE------------------------ */
+.bottom_page {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.bottom_page footer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  background-color: white;
+  border-top: 1px solid rgb(199, 199, 199);
+}
+.bottom_page footer a {
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+  color: white;
+}
+.bottom_page footer .fa-home,
+.fa-search,
+.fa-plus-square,
+.fa-heart {
+  cursor: pointer;
+}
+.bottom_page .right {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(199, 199, 199);
+  background-color: white;
+}
+.bottom_page .right button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.bottom_page .right button img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 650px) {
+  .like_page .like {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .like_page .like .box .follow {
+    width: 100%;
+    height: 10%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .like_page .like {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .like_page .like .box .follow {
+    width: 100%;
+    height: 10%;
+  }
+  .like_page .like .box .follow .title {
+    width: 100%;
+    height: 100%;
+  }
+  .like_page .like .box .follow .left {
+    width: 80%;
+    height: 100%;
+    display: flex;
+  }
+  .like_page .like .box .follow .left .started {
+    width: 20%;
+    height: 100%;
+  }
+  .like_page .like .box .follow .left .started img {
+    width: 70%;
+    height: 80%;
+    border-radius: 50%;
+  }
+  .like_page .like .box .follow .left .started h1 {
+    font-size: 12px;
+  }
+  .like_page .like .box .follow .left .box {
+    width: 100%;
+    height: 100%;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .like_page .like .box .follow .left .box p {
+    font-size: 10px;
+  }
+  .like_page .like .box .follow .right .box button {
+    width: 50px;
+    height: 30px;
+  }
+}

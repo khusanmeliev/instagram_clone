@@ -1,0 +1,394 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --navbar-height: 50px;
+}
+nav {
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}
+nav .left {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .left .icon {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav .left .icon .fa-gear {
+  cursor: pointer;
+  font-size: 25px;
+}
+nav .middle {
+  width: 34%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .middle h1 {
+  font-size: 23px;
+}
+nav .right {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .right .icon {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 25px;
+}
+/* -----------------------------------PROFILE PAGE----------------------- */
+.profile_page {
+  width: 100%;
+  height: calc(97vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.profile_page .top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_page .top .profile {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.profile_page .top .profile .box {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_page .top .profile .box .img {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_page .top .profile .box .img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.profile_page .top .profile .box .edit {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.profile_page .top .profile .box .edit .editprofile {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: flex-end;
+}
+.profile_page .top .profile .box .edit .editprofile .title {
+  width: 75%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+.profile_page .top .profile .box .edit .editprofile .title p {
+  margin: 30px;
+  font-size: 30px;
+}
+.profile_page .top .profile .box .edit .followers {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+.profile_page .top .profile .box .edit .followers .text {
+  width: 75%;
+  height: 100%;
+  display: flex;
+}
+.profile_page .top .profile .box .edit .followers .text .cut {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.profile_page .top .profile .box .edit .followers .text .cut .left {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_page .top .profile .box .edit .followers .text .cut .left h1 {
+  font-size: 40px;
+}
+/* ----------------------BOTTOM------------------------- */
+.profile_page .bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_page .bottom .box {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_page .bottom .box .boxes {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+}
+.profile_page .bottom .box .boxes img {
+  width: 90%;
+  height: 100%;
+}
+
+/* -----------------B-------------BOTTOM-PAGE------------------------ */
+.bottom_page {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.bottom_page footer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  background-color: white;
+  border-top: 1px solid rgb(199, 199, 199);
+}
+.bottom_page footer a {
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+  color: white;
+}
+.bottom_page footer .fa-home,
+.fa-search,
+.fa-plus-square,
+.fa-heart {
+  cursor: pointer;
+}
+.bottom_page .right {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(199, 199, 199);
+  background-color: white;
+}
+.bottom_page .right button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.bottom_page .right button img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width:910px){
+   .profile_page .top{
+     width: 100%;
+     height: 50%;
+   }
+   .profile_page .top .profile {
+     width: 65%;
+     height: 100%;
+   }
+   .profile_page .top .profile .box {
+     width: 100%;
+     height: 100%;
+   }
+   .profile_page .top .profile .box .img {
+     width: 100px;
+     height: 100px;
+   }
+   .profile_page .top .profile .box .img img{
+     width: 100%;
+     height: 100%;
+   }
+   .profile_page .top .profile .box .edit {
+    width: 100%;
+    height: 100%;
+  }
+  .profile_page .top .profile .box .edit .editprofile {
+    width: 200%;
+    height: 70%;
+  }
+  .profile_page .top .profile .box .edit .editprofile .title {
+    width: 50%;
+    height: 40%;
+  }
+  .profile_page .top .profile .box .edit .editprofile .title p {
+    font-size: 20px;
+  }
+  .profile_page .top .profile .box .edit .followers {
+    width: 100%;
+    height: 70%;
+  }
+  .profile_page .top .profile .box .edit .followers .text {
+    width: 100%;
+    height: 100%;
+  }
+  .profile_page .top .profile .box .edit .followers .text .cut {
+    width: 100%;
+    height: 10%;
+  }
+  .profile_page .top .profile .box .edit .followers .text .cut .left {
+    width: 40%;
+    height: 100%;
+  }
+  .profile_page .top .profile .box .edit .followers .text .cut .left h1 {
+    font-size: 40px;
+  }
+  .profile_page .bottom {
+    width: 100%;
+    height: 50%; 
+  }
+  .profile_page .bottom .box {
+    width: 100%;
+    height: 100%; 
+  }
+  .profile_page .bottom .box .boxes {
+    width: 33%;
+    height: 100%;
+  }
+  .profile_page .bottom .box .boxes img {
+    width: 90%;
+    height: 90%;
+  }
+  
+  
+@media only screen and (max-width:400px){
+   nav{
+  width: 100%;
+  height: 50px;
+   }
+  .profile_page{
+    width: 100%;
+    height: 100vh;
+  }
+  .profile_page .top{
+    width: 100%;
+    height: 50%;
+  }
+  .profile_page .top .profile {
+    width: 100%;
+    height: 100%;
+  }
+  .profile_page .top .profile .box {
+    width: 100%;
+    height: 100%;
+  }
+  .profile_page .top .profile .box .img {
+    width: 100px;
+    height: 100px;
+  }
+  .profile_page .top .profile .box .img img{
+    width: 100%;
+    height: 100%;
+  }
+  .profile_page .top .profile .box .edit {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: flex-end;
+ }
+ .profile_page .top .profile .box .edit .editprofile {
+   width: 95%;
+   height: 60%;
+ }
+ .profile_page .top .profile .box .edit .editprofile .title {
+   width: 60%;
+   height: 40%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .profile_page .top .profile .box .edit .editprofile .title p {
+   font-size: 25px;
+ }
+ .profile_page .top .profile .box .edit .followers {
+   width: 100%;
+   height: 50%;
+   display: flex;
+   align-items: center;
+ }
+ .profile_page .top .profile .box .edit .followers .text {
+   width: 100%;
+   height: 100%;
+
+ }
+ .profile_page .top .profile .box .edit .followers .text .cut {
+   width: 100%;
+   height: 40%;
+   display: flex;
+ }
+ .profile_page .top .profile .box .edit .followers .text .cut .left {
+   width: 33.3%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   font-size: 15px;
+ }
+
+ .profile_page .bottom {
+   width: 100%;
+   height: 50%; 
+ }
+ .profile_page .bottom .box {
+   width: 90%;
+   height: 90%; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .profile_page .bottom .box .boxes {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_page .bottom .box .boxes img {
+  width: 80%;
+  height: 70%;
+}
+}
