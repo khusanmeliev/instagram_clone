@@ -247,7 +247,7 @@ nav .message .logo .fa-comment {
 }
 .chat .right .box .middle {
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -309,14 +309,14 @@ nav .message .logo .fa-comment {
 }
 .chat .right .box .bottom {
   width: 100%;
-  height: 10%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .chat .right .box .bottom input {
   width: 90%;
-  height: 100%;
+  height: 60%;
   border: none;
   outline: none;
   border-radius: 15px;
@@ -382,6 +382,7 @@ nav .message .logo .fa-comment {
   height: 30px;
   border-radius: 50%;
 }
+/* ------------------------MOBILE DATA-------------------- */
 @media only screen and (max-width: 900px) {
   .chat {
     width: 100%;
